@@ -1,0 +1,176 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "exo", "poppins", sans-serif;
+}
+
+.intro {
+  text-align: center;
+  margin: 20px 15px 10px 15px;
+}
+
+.intro h2 {
+  margin: 10px 0 0 0;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #fff, 0%, #d7e1ec 74%);
+  /* min-height: calc(100vh - 60px); */
+  /* background: #C00; */
+  /* background-image: url(nt\ kaligrafi.png); */
+}
+
+img {
+  width: 100px;
+  height: 85px;
+  -webkit-filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+h2.title {
+  text-transform: uppercase;
+}
+
+.contact-buttons .button {
+  position: relative;
+  left: 35%;
+}
+
+.button {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  float: left;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.button .icon {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 40px;
+  transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.button .icon i {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.button:hover {
+  width: 220px;
+}
+
+.button span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+.button:hover i {
+  color: #fff;
+}
+
+.button:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+.button:nth-child(2):hover .icon {
+  background: #b06e2a;
+}
+.button:nth-child(3):hover .icon {
+  background: #e44311;
+}
+.button:nth-child(4):hover .icon {
+  background: #529f37;
+}
+.button:nth-child(5):hover .icon {
+  background: #ff0000;
+}
+
+.button:nth-child(1) span {
+  color: #4267b2;
+}
+.button:nth-child(2) span {
+  color: #b06e2a;
+}
+.button:nth-child(3) span {
+  color: #e44311;
+}
+.button:nth-child(4) span {
+  color: #529f37;
+}
+.button:nth-child(5) span {
+  color: #ff0000;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .contact-buttons .button {
+    position: relative;
+    left: 28%;
+  }
+
+  .button:hover {
+    width: 8%;
+  }
+
+  .button span {
+    font-size: 11px;
+    margin-left: 3px;
+    display: block;
+    height: 220px;
+  }
+
+  a.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Tooltip text */
+  a.tooltip span.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  a.tooltip span.tooltiptext {
+    /* width: 120px; */
+    top: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  }
+
+  a.tooltip:hover span.tooltiptext {
+    visibility: visible;
+  }
+}
